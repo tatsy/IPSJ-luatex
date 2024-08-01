@@ -1,0 +1,73 @@
+onlyOneBackup: 1
+defaultIndent: "  "
+removeTrailingWhiteSpace: 1
+
+verbatimEnvironments:
+  abstract: 1
+  CCSXML: 1
+
+modifyLineBreaks:
+  textWrapOptions:
+    columns: 9999
+    condenseMultipleBlankLinesInto:
+      beforeProcessing: 1
+    multipleSpacesToSingle:
+      beforeProcessing: 1
+    removeBlockLineBreaks:
+      beforeProcessing: 1
+    removeSentenceLineBreaks:
+      beforeProcessing: 1
+    removeTrailingWhiteSpace:
+      beforeProcessing: 1
+
+lookForAlignDelims:
+  tabular:
+    delim: 1
+  cases:
+    delims: 0
+  tblr:
+    delims: 1
+    dontMeasure:
+      - regex: '\{\{\{.*\}\}\}'
+      - regex: "SetCell"
+    alignDoubleBackSlash: 0
+    spacesBeforeDoubleBackSlash: 4
+    multiColumnGrouping: 0
+    alignRowsWithoutMaxDelims: 1
+    spacesBeforeAmpersand: 1
+    spacesAfterAmpersand: 1
+    justification: left
+    alignFinalDoubleBackSlash: 1
+    delimiterRegEx: '(?<!\\)(&)'
+    delimiterJustification: left
+    lookForChildCodeBlocks: 1
+  align:
+    delims: 1
+    alignDoubleBackSlash: 0
+    spacesBeforeDoubleBackSlash: 1
+    multiColumnGrouping: 0
+    alignRowsWithoutMaxDelims: 1
+    spacesBeforeAmpersand: 1
+    spacesAfterAmpersand: 0
+    justification: left
+    alignFinalDoubleBackSlash: 0
+    dontMeasure: 0
+    delimiterRegEx: '(?<!\\)(&)'
+    delimiterJustification: left
+  gather:
+    delims: 1
+    alignDoubleBackSlash: 0
+    spacesBeforeDoubleBackSlash: 1
+    multiColumnGrouping: 0
+    alignRowsWithoutMaxDelims: 1
+    spacesBeforeAmpersand: 1
+    spacesAfterAmpersand: 0
+    justification: left
+    alignFinalDoubleBackSlash: 0
+    dontMeasure: 0
+    delimiterRegEx: '(?<!\\)(&)'
+    delimiterJustification: left
+
+replacements:
+  - substitution: s/\h+/ /sg
+    when: before
